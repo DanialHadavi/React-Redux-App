@@ -14,17 +14,14 @@ const TenJokes = (props) => {
     <div>
       <Joke />
       <h1> 😂 Try 10 Jokes 🤣 </h1>
-      {props.isFetching && (
-        <Loader type="Puff" color="#00BFFF" height={100} width={100} />
-      )}
-
-      {props.joke.map((z) => (
-        <div key={z.id}>
-          <h3>{z.setup}</h3>
-          <h4>{z.punchline}</h4>
-        </div>
-      ))}
-
+      <div className="mr-container">
+        {props.joke.map((z) => (
+          <div className="small-box" key={z.id}>
+            <h3>{z.setup}</h3>
+            <h4>{z.punchline}</h4>
+          </div>
+        ))}
+      </div>
       <button onClick={props.fetchTenJokes}>Ten New Jokes?</button>
     </div>
   );

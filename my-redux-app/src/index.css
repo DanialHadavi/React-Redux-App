@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  background-color: #483d8b;
+  color: white;
 }
 
 code {
@@ -17,4 +20,27 @@ button {
   background-color: blueviolet;
   color: white;
   padding: 5px 20px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.mr-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.small-box {
+  border: 1px solid #008080;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+  background-color: #008080;
 }
